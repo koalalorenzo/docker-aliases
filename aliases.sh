@@ -18,9 +18,16 @@ alias coffee="docker_alias /directory shouldbee/coffeescript coffee"
 # PHP
 alias php="docker_alias /directory php php"
 
+# Ruby
+alias ruby="docker_alias /directory ruby ruby"
+
+alias rails="docker_alias /directory rails rails"
+alias rake="docker_alias /directory rails rake"
+
 # Python
 alias python2.7="docker_alias /directory python:2.7 python"
 alias python="docker_alias /directory python python"
+
 alias django-admin.py="docker_alias /directory django django-admin.py"
 
 # Redis
