@@ -1,5 +1,5 @@
 # docker-aliases
-Run commands inside docker containers to keep your OS untouched using bash alias. The aliases are saved into the file called "aliases.sh", and it will use, mount files and open ports in order to use specific commands inside a docker container instead of the host/main operative system.
+Run commands inside docker containers to keep your OS untouched using bash alias. The aliases are saved into the file called "aliases.sh", and it will use, mount files and open ports in a container instead of using the one in the host/main operative system.
 
 The main concept is to run a comand using its docker container/image like that:
 
@@ -9,6 +9,7 @@ But this repository contains some aliases to "replace" the main command:
 
     alias node="docker run -it --rm -v $(pwd):/directory -w /directory node node"
     alias npm="docker run -it --rm -v $(pwd):/directory -w /directory node npm"
+    # then run
     node --version
     npm --version
 
