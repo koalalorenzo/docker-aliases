@@ -35,4 +35,6 @@ Add, in your ~/.bash_profile file this line, replacing ~/PATH_OF_REPOSITORY with
 
     source ~/PATH_OF_REPOSITORY/aliases.sh
 
-And then it will start using these commands, inside a docker container.
+And then it will start using these commands, inside a docker container each time you run any of them.
+
+**Note**: Some commands may require some more configuration in order to work properly. Feel free to create a pull request or open an issue in case you find a solution!
