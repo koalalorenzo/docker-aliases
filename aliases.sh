@@ -6,6 +6,7 @@ function docker_alias() {
         -p 8080:8080 \
         -p 8000:8000 \
         -p 80:80 \
+        -p 3306:3306 \
         ${@:2}
 }
 
@@ -52,3 +53,6 @@ alias pg_restore="docker_alias /directory postgres pg_restore"
 
 # Nginx
 alias nginx="docker_alias /usr/share/nginx/html nginx nginx"
+
+# LAMP
+alias lamp-here="docker_alias /var/www/html tutum/lamp"
