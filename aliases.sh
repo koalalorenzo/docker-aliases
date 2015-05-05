@@ -7,6 +7,7 @@ function docker_alias() {
         -p 8000:8000 \
         -p 80:80 \
         -p 3306:3306 \
+        -p 27017:27017 \
         ${@:2}
 }
 
@@ -41,7 +42,8 @@ alias redis-check-aof="docker_alias /directory redis redis-check-aof"
 alias redis-sentinel="docker_alias /directory redis redis-sentinel"
 
 # MongoDB
-# alias mongo="docker_alias /directory mongo mongo"
+alias mongo="docker_alias /directory mongo mongo"
+alias mongod="docker_alias /directory mongo mongod"
 
 # Postgres
 alias postgres="docker_alias /directory postgres postgres"
