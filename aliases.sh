@@ -58,3 +58,6 @@ alias nginx="docker_alias /usr/share/nginx/html nginx nginx"
 
 # LAMP
 alias lamp-here="docker_alias /var/www/html tutum/lamp"
+
+# TFlint - https://github.com/wata727/tflint
+alias tflint="docker_alias /data wata727/tflint"
