@@ -7,8 +7,8 @@ The main concept is to run a comand using its docker container/image like that:
 
 But this repository contains some aliases to "replace" the main command:
 
-    alias node="docker run -it --rm -v $(pwd):/directory -w /directory node node"
-    alias npm="docker run -it --rm -v $(pwd):/directory -w /directory node npm"
+    alias node='docker run -it --rm -v $(pwd):/directory -w /directory node node'
+    alias npm='docker run -it --rm -v $(pwd):/directory -w /directory node npm'
     # then run
     node --version
     npm --version
